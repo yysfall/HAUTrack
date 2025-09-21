@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #650000;
+    color: #FFFFFF
+}
+
+#nav a{
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font-size: 90px;
+    text-align: center;
+}
+
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.lostCards {
+    width: 296px;
+    height: 347px;
+    border-radius: 12px;
+    border: 1px solid #CAC4D0;
+}
+
+#cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 72px;
+}
+
+#itemName {
+    margin: 0;
+}
+
+#picture {
+    background-color: #650000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#lostPicture {
+    height: 75px;
+    background-color: #650000;
+}
+
+#lostInformation {
+    height: 200px;
+    padding-left: 10px;
+}
+
+button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color: #650000;
+    color: #FFFFFF;
+    border: none;
+}
+
+#reportCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    height: 650px;
+    border: 1px solid #D9D9D9;
+}
+
+#inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 240px;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+input, textarea {
+    width: 590px;
+    height: 35px;
+    margin-left: auto;
+    border-radius: 8px;
+    border: none;
+    background-color: #D9D9D9;
+    padding: 6px;
+}
+
+#desc {
+    height: 75px;
+}
+
+#reportButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lostInformation button {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
