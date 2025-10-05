@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 #header{
@@ -61,8 +62,8 @@ body {
 
 #picture {
     background-color: #650000;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-left: 10px;
 }
@@ -149,4 +150,133 @@ input, textarea {
     margin-right: 10px;
 }
 
+#mainForum {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 
+#recent, #notifications {
+    width: 25%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#posts {
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newPosts {
+    margin-top: 30px;
+    width: 300px;
+    height: 180px;
+    background-color: #650000;
+    border-radius: 16px;
+}
+
+#popTags {
+    width: 300px;
+    height: 340px;
+    background-color: #650000;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+#createPost {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 800px;
+    margin-top: 30px;
+    border-radius: 16px;
+    height: 100px;
+    background-color: #650000;
+}
+
+#createPost button{
+    margin-top: 0;
+    font-size: 16px;
+}
+
+#createPost #picture, #samplePost #picture {
+    margin: 0;
+    background-color: #D9D9D9;
+}
+
+#createPost input {
+    margin: 0;
+    height: 50px;
+}
+
+#samplePost {
+    margin-top: 30px;
+    width: 800px;
+    height: 230px;
+    display: flex;
+
+    border-radius: 16px;
+    background-color: #650000;
+}
+
+#postPhotoDiv {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#postDescDiv {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#postPhoto {
+    width: 85%;
+    height: 85%;
+    background-color: #D9D9D9;
+    border-radius: 16px;
+}
+
+#postDesc, #postAuthor {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #D9D9D9;
+}
+
+#postAuthor #postAuthordesc {
+    margin-left: 10px;
+}
+
+#notifs {
+    height: 300px;
+    width: 300px;
+    background-color: #650000;
+    border-radius: 16px;
+    margin-top: 30px;
+    color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+#notifs h3 {
+    margin-left: 20px;
+}
+
+#notificationsDiv {
+    height: 60px;
+    color: #D9D9D9;
+}
+
+#notificationsDiv p {
+    margin-left: 20px;
+}
