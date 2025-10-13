@@ -15,17 +15,21 @@
             <a href="reportlost.html">Report Lost</a>
             <a href="found.html">Found</a>
             <a href="reportfound.html">Report Found</a>
-            <a href="">Forum</a>
+            <a href="forum.html">Forum</a>
         </div>
     </div>
 
     <div id="mainForum">
         <div id="recent">
             <div id="newPosts">
-
+                <div id="newPostsHeader">
+                    <h3>NEWEST AND RECENT</h3>
+                </div>
             </div>
             <div id="popTags">
-
+                <div id="popTagsHeader">
+                    <h3>POPULAR TAGS</h3>
+                </div>
             </div>
         </div>
         <div id="posts">
@@ -33,8 +37,7 @@
                 <div id="picture">
                 </div>
                 <input type="text" id = "forumText">
-
-                <button>Create post</button>
+                <button id="createPostBtn">Create post</button>
             </div>
             <div id="samplePost">
                 <div id="postPhotoDiv">
@@ -42,7 +45,7 @@
                 </div>
                 <div id="postDescDiv">
                     <div id="postDesc">
-                        <h3>LOST IPHONE 17 PRO MAX 1TB FULLY PAID</h3>
+                        <h3 id="mainPostTitle">LOST IPHONE 17 PRO MAX 1TB FULLY PAID</h3>
                     </div>
                     <div id="postAuthor">
                         <div id="picture"></div>
@@ -59,17 +62,24 @@
                 <div id="notifsHeader">
                     <h3>NOTIFICATIONS</h3>
                 </div>
-                <div id="notificationsDiv">
-                    <p>Keane Esguerra liked your post</p>
-                </div>
-                <div id="notificationsDiv">
-                    <p>Icent Muli liked your post</p>
-                </div>
-                <div id="notificationsDiv">
-                    <p>Paul Dela Bueno liked your post</p>
-                </div>
             </div>
         </div>
     </div>
+
+    <dialog id="postDialog">
+        <form id="postForm" method="dialog">
+            <h3>Create New Post</h3>
+
+            <input type="text" id="postTitle" name="postTitle" placeholder="Title" required>
+            <input type="text" id="postTags" name="postTags" placeholder="Tags">
+            <textarea id="postDescription" name="postDescription" placeholder="Description" rows="4" required></textarea>
+            
+            <div id="actions">
+                <button type="submit">Submit</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
 </body>
 </html>

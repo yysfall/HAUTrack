@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 html, body {
@@ -30,6 +31,8 @@ html, body {
 #title {
     font-size: 90px;
     text-align: center;
+    font-weight: 900;
+    margin: 50px auto 50px auto;
 }
 
 #cardsContainer {
@@ -97,7 +100,7 @@ button {
     margin-right: auto;
     display: flex;
     width: 80%;
-    height: 650px;
+    height: 750px;
     border: 1px solid #D9D9D9;
 }
 
@@ -196,13 +199,14 @@ input, textarea {
     width: 800px;
     margin-top: 30px;
     border-radius: 16px;
-    height: 100px;
+    min-height: 100px;
+    height: auto;
     background-color: #650000;
 }
 
 #createPost button{
     margin-top: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #createPost #picture, #samplePost #picture {
@@ -218,9 +222,9 @@ input, textarea {
 #samplePost {
     margin-top: 30px;
     width: 800px;
-    height: 230px;
+    height: auto;
     display: flex;
-
+    min-height: 230px;
     border-radius: 16px;
     background-color: #650000;
 }
@@ -268,8 +272,9 @@ input, textarea {
     flex-direction: column;
 }
 
-#notifs h3 {
+#notifs h3, #newPostsHeader, #popTagsHeader{
     margin-left: 20px;
+    color: #D9D9D9;
 }
 
 #notificationsDiv {
@@ -279,4 +284,39 @@ input, textarea {
 
 #notificationsDiv p {
     margin-left: 20px;
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 50%;
+    height: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+input, textarea {
+    margin: 0 auto 20px auto;
+    padding: 8px;
+    font-size: 14px;
+    height: 50px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 8px;
+}
+
+#actions {
+    display: flex;
 }
