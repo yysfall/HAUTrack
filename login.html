@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAUTrack | Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <h1>HAUTrack</h1>
+    </div>
+    <div id="main">
+        <div id="login">
+            <h1>HAUTrack</h1>
+            <h2>Angelite Lost and Found</h2>
+
+            <input type="text" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button id="loginButton">Login</button>
+        </div>
+        <div id="loginImage">
+
+        </div>
+    </div>
+    <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDi47A_ms0uZKLCQN9yKFI67cdFRMkiAoE",
+        authDomain: "hautrack.firebaseapp.com",
+        projectId: "hautrack",
+        storageBucket: "hautrack.firebasestorage.app",
+        messagingSenderId: "1031133156889",
+        appId: "1:1031133156889:web:d5effa0086a2142893bc88"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const loginButton = document.getElementById("loginButton");
+
+    loginButton.addEventListener("click", () => {
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPassword").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          window.location.href = "index.html";
+        })
+        .catch(error => {
+          alert("Login failed: " + error.message);
+        })});
+    </script>
+</body>
+</html>
