@@ -14,7 +14,8 @@ html, body {
     align-items: center;
     justify-content: space-around;
     background: #650000;
-    color: #FFFFFF
+    color: #FFFFFF;
+    height: 80px;
 }
 
 #nav a{
@@ -26,6 +27,39 @@ html, body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#loginMain {
+    display: flex;
+    height: calc(100% - 80px);
+    align-items: center;
+}
+
+#loginImage {
+    width: 60%;
+    height: 100%;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#indexImage {
+    height: calc(100% - 80px);
+    width: 100%;
+    background-image: url(hau_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+}
+
+#login input {
+    margin: 0 0 20px 0;
 }
 
 #title {
