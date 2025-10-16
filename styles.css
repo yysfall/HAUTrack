@@ -23,6 +23,7 @@ html, body {
 #nav a{
     padding: 20px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 #main {
@@ -385,7 +386,7 @@ button {
     width: 90%;
     height: 100px;
     display: flex;
-    border: 1px solid black;
+   /*  border: 1px solid black; */
     align-items: center;
     justify-content: space-between;
 }
@@ -404,6 +405,9 @@ button {
     border: 1px solid black;
     border-radius: 20px;
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #profilePosts {
@@ -419,7 +423,18 @@ button {
     border-bottom: 1px solid black;
 }
 
-#nameDept h2, #nameDept h3, #authorDiv h2, #authorDiv h3{
+#nameDept h2, #nameDept h3, #authorDiv h2, #authorDiv h4{
     margin: 5px;
     padding: 0;
+}
+
+#avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #650000;
+}
+
+#authorDiv {
+    display: flex;
 }
