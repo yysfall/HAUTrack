@@ -12,10 +12,12 @@ html, body {
 #header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #650000;
     color: #FFFFFF;
     height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #nav a{
@@ -195,7 +197,6 @@ input, textarea {
 
 #recent, #notifications {
     width: 25%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +204,6 @@ input, textarea {
 
 #posts {
     width: 50%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +229,6 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
     width: 800px;
     margin-top: 30px;
     border-radius: 16px;
@@ -281,6 +280,8 @@ input, textarea {
     height: 85%;
     background-color: #D9D9D9;
     border-radius: 16px;
+    background-size: cover;
+    background-position: center;
 }
 
 #postDesc, #postAuthor {
@@ -288,7 +289,7 @@ input, textarea {
     width: 100%;
     display: flex;
     align-items: center;
-    color: #D9D9D9;
+    color: white;
 }
 
 #postAuthor #postAuthordesc {
@@ -301,19 +302,19 @@ input, textarea {
     background-color: #650000;
     border-radius: 16px;
     margin-top: 30px;
-    color: #D9D9D9;
+    color: white;
     display: flex;
     flex-direction: column;
 }
 
 #notifs h3, #newPostsHeader, #popTagsHeader{
     margin-left: 20px;
-    color: #D9D9D9;
+    color: white;
 }
 
 #notificationsDiv {
     height: 60px;
-    color: #D9D9D9;
+    color: white;
 }
 
 #notificationsDiv p {
@@ -353,4 +354,72 @@ button {
 
 #actions {
     display: flex;
+}
+
+#coverImg {
+    position: relative;
+    height: 300px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: bisque;
+    display: flex;
+    align-items: end;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#profilePic {
+    position: absolute;
+    bottom: -50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #650000;
+    margin-left: 30px;
+}
+
+#profileName {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nameDept {
+    margin-left: 250px;
+}
+
+#mainContent {
+    display: flex;
+}
+
+#aboutMe {
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+#profilePosts {
+    height: 100%;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+#postsHeader {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+#nameDept h2, #nameDept h3, #authorDiv h2, #authorDiv h3{
+    margin: 5px;
+    padding: 0;
 }

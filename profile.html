@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAUTrack</title>
+    <title>HAUTrack | Profile</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -19,11 +16,39 @@
             <a href="found.html">Found</a>
             <a href="reportfound.html">Report Found</a>
             <a href="forum.html">Forum</a>
-            <a href="profile.html">Profile</a>
         </div>
     </div>
-    <div id="indexImage">
-        
+    <div id="coverImg">
+        <div id="profilePic"></div>
+    </div>
+    <div id="profileName">
+        <div id="nameDept">
+            <h2>User</h2>
+            <h3>Department</h3>
+        </div>
+        <div id="profileBtns">
+            <button>Message</button>
+            <button>Follow</button>
+        </div>
+    </div>
+    <div id="mainContent">
+        <div id="aboutMe">
+            <h2>About</h2>
+            <button id="logoutButton">Logout</button>
+        </div>
+        <div id="profilePosts">
+            <div id="postsHeader">
+                <h2>Posts</h2>
+            </div>
+            <div id="profilePost">
+                <div id="authorDiv">
+                    <div id="avatar"></div>
+                    <h2>Name</h2>
+                    <h3>Timestamp</h3>
+                    <div id="profilePostPic"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
@@ -42,7 +67,7 @@
     const auth = getAuth(app);
 
 
-    /* onAuthStateChanged(auth, user => {
+    onAuthStateChanged(auth, user => {
         console.log("Auth state: " + user);
       if (!user) {
         console.log("No user found")
@@ -60,10 +85,7 @@
           console.error("Logout failed:", error);
         });
       });
-    }); */
+    });
     </script>
-</body>
-</html>
-
 </body>
 </html>

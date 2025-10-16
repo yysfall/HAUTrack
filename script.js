@@ -20,6 +20,7 @@ form.addEventListener('submit', (e) => {
   const title = form.postTitle.value.trim();
   const tags = form.postTags.value.trim();   
   const description = form.postDescription.value.trim();
+  const imageFile = form.postImage.files[0];
 
   const newPost = samplePost.cloneNode(true);
 
@@ -28,6 +29,15 @@ form.addEventListener('submit', (e) => {
 
   const timeElement = newPost.querySelector('#postAuthordesc p');
   timeElement.textContent = 'Just now';
+
+  if (imageFile) {
+    const imageURL = URL.createObjectURL(imageFile);
+    const photoElement = newPost.querySelector('#postPhoto');
+    photoElement.style.backgroundImage = `url(${imageURL})`;
+    photoElement.style.backgroundSize = "cover";
+    photoElement.style.backgroundPosition = "center";
+    
+  }
 
   postsContainer.appendChild(newPost);
 
