@@ -14,6 +14,7 @@ const form = document.getElementById('postForm');
 const postsContainer = document.getElementById('posts');
 const samplePost = document.getElementById('samplePost');
 
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
